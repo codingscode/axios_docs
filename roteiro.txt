@@ -2,6 +2,14 @@
 https://axios-http.com/docs/intro
 
 
+na pasta p001
+   npm init -y
+   
+
+
+
+
+
 
 
 
