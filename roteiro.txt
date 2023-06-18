@@ -4,10 +4,13 @@ https://axios-http.com/docs/intro
 
 na pasta p001
    npm init -y
-   
+   npm install axios
+   node arquivo.js
 
 
 
+na pasta back1:
+   npm start
 
 
 
