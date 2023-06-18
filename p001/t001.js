@@ -6,17 +6,17 @@ const app = axios
 
 // Make a request for a user with a given ID
 app.get('http://192.168.1.17:3000/user?id=2')
-  .then(function (response) {
+  .then((res) => {
     // handle success
-    console.log(response);
+    console.log(res)
   })
-  .catch(function (error) {
+  .catch((error) => {
     // handle error
-    console.log(error);
+    console.log(error)
   })
-  .finally(function () {
+  .finally(() => {
     // always executed
-  });
+  })
 
 // Optionally the request above could also be done as
 app.get('http://192.168.1.17:3000/user', {
@@ -24,23 +24,23 @@ app.get('http://192.168.1.17:3000/user', {
       id: 1
     }
   })
-  .then(function (response) {
-    //console.log(response);
+  .then((res) => {
+     console.log(res)
   })
-  .catch(function (error) {
-    console.log(error);
+  .catch((error) => {
+     console.log(error)
   })
-  .finally(function () {
+  .finally(() => {
     // always executed
-  });  
+  })  
 
 // Want to use async/await? Add the `async` keyword to your outer function/method.
 async function getUser() {
   try {
-    const response = await axios.get('/user?ID=12345');
-    console.log(response);
+    const response = await axios.get('/user?ID=12345')
+    console.log(response)
   } catch (error) {
-    console.error(error);
+    console.error(error)
   }
 }
 
